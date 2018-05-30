@@ -10,6 +10,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "description": "The promo website for Forgotten Floof",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/forgottenfloof/forgottenfloof.com.git"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.0.0",
