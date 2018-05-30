@@ -14,11 +14,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-top: $nav-bar-height;
 
   &.menu-open {
     overflow: hidden;
   }
+
+  padding-top: $nav-bar-height;
 
   @include for-phone-only() {
     padding-top: $nav-bar-height-mobile;
