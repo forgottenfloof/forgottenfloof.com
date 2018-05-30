@@ -22,8 +22,8 @@ $content-max-width: 1340px;
 //$content-max-width: 120rem;
 
 // Dimensions
-$nav-bar-height: 3.6em;
-$nav-bar-height-mobile: 50px;
+$nav-bar-height: $spacing-medium;
+$nav-bar-height-mobile: 56px;
 
 // Shadows
 $text-shadow-base: 1px 1px 5px $_shadow-color;

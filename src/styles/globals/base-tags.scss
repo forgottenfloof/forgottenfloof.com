@@ -8,15 +8,20 @@
 body {
   font-family: $font-stack-base;
   font-style: normal;
-  font-weight: 300;
   color: $font-colour;
+  background: $background-colour;
   font-size: 16px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  padding-top: $nav-bar-height;
 
   &.menu-open {
     overflow: hidden;
+  }
+
+  @include for-phone-only() {
+    padding-top: $nav-bar-height-mobile;
   }
 }
 

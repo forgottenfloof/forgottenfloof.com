@@ -2,15 +2,15 @@
   <nav>
     <h1>
       <a href="">
-        <img class="nav-logo" src='' alt="Tradeteq">
+        <img class="nav-logo" src='./assets/kickstarter-badge.png' alt="">
       </a>
     </h1>
     <app-mobile-nav
-      *ngIf="innerWidth && (innerWidth < 1145)"
+      *ngIf="innerWidth && (innerWidth < 600)"
     ></app-mobile-nav>
 
     <span
-      *ngIf="innerWidth && (innerWidth > 1144)"
+      *ngIf="innerWidth && (innerWidth > 599)"
       class="nav-links"
     >
       <span *ngFor="let menuItem of menuItems">

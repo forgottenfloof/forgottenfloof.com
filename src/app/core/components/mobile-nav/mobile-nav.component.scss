@@ -25,7 +25,7 @@ ul {
   position: absolute;
   top: 64px;
   left: 0;
-  width: calc(100vw - 56px);
+  width: 100vw;
   height: calc(100vh - 62px);
   background: $background-colour;
   z-index: z(links, $_z-indexes-nav);
@@ -36,8 +36,8 @@ ul {
   overflow: auto;
 
   @media screen and (max-width: $break-small) {
-    top: 52px;
-    height: calc(100vh - 116px);
+    top: $nav-bar-height-mobile;
+    height: calc(100vh - #{$nav-bar-height-mobile});
   }
 
   li {

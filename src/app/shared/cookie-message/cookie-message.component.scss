@@ -46,6 +46,7 @@ $_cookie-max-width: calc(1468px - #{$spacing-base * 2});
 
   a {
     @include cta-inline();
+    color: $bright-link;
   }
 
   a,

@@ -12,8 +12,10 @@ header {
   border-bottom: 2px solid #707070;
   border-bottom: 2px solid $border-colour;
   background: white;
-  background: $background-colour;
+  background: $blue-background;
   z-index: 3;
+  color: $text-on-blue-colour;
+  height: $nav-bar-height;
 
   @media screen and (max-width: 768px){
     position: absolute;
@@ -27,8 +29,8 @@ header {
 }
 
 .nav-logo {
-  position: relative;
-  height: 2.25em;
+  position: fixed;
+  height: 8.5rem;
   width: auto;
   z-index: 10;
 
@@ -47,7 +49,7 @@ nav {
 .nav-links {
   position: absolute;
   text-align: right;
-  top: 27px;
+  top: $spacing-small * 1.4;
   right: 40px;
   text-transform: capitalize;
   font-size: 16px;
@@ -56,9 +58,12 @@ nav {
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color: #353535;
-    color: $font-colour;
     margin-right: 2rem;
+    color: $text-on-blue-colour;
+
+    &:active {
+      color: $text-on-blue-colour;
+    }
 
     &.active {
       @include before() {
