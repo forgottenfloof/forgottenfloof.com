@@ -1,0 +1,84 @@
+/*
+** Base styles for html tags used globally in the application
+** Media queries for responsive layout are at the foot of this file
+*/
+
+@import '../base/base';
+
+body {
+  font-family: $font-stack-base;
+  font-style: normal;
+  font-weight: 300;
+  color: $font-colour;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+
+* {
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border-top: 1px solid $font-colour;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: $break-small) {
+    margin-bottom: 1rem;
+  }
+}
+
+h4 {
+  margin: 0;
+}
+
+h1, h2 {
+  //@include SabonLTPro-Bold();
+}
+
+h3 {
+  //@include SabonLTPro-Roman();
+}
+
+h4 {
+  //@include GothamBlack();
+}
+
+h2 {
+  //font-size: 4.5rem;
+}
+
+h3 {
+  //font-size: 2em;
+}
+
+p {
+  margin-top: 0;
+  line-height: $line-height-base;
+}
+
+a {
+  //@include cta-move();
+}
+
+button {
+  //@include button-primary();
+}
+
+.cta-primary {
+  @include cta-primary();
+}
+
+.cta-inline {
+  @include cta-inline();
+}

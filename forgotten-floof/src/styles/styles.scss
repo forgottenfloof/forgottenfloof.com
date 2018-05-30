@@ -1,0 +1,12 @@
+/* Here we bring together the various mixins and classes that operate globally in the application
+ * Please add global classes to an appropriate file in the folder 'globals'
+ * Please add variables and mixins to base -- DO NOT ADD CLASSES TO FILES IN BASE!!
+ * The heading font, Sabon, is included in this repo and imported in this file
+ * The Body font, Gotham, is imported from index.html
+ */
+
+// Sea containers sass theme
+@import "sass";
+
+// Global styles
+@import "globals/globals";

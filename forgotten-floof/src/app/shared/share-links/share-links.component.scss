@@ -1,0 +1,19 @@
+@import "../../../styles/base/base";
+@import "../../../styles/elements/elements";
+
+.link-container {
+  display: flex;
+}
+
+.link-symbol {
+  width: $spacing-base;
+  height: $spacing-base;
+  margin: $spacing-tiny $spacing-tiny 0 0;
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

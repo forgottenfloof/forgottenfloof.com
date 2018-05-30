@@ -1,0 +1,49 @@
+@import "../base/base";
+
+$_cta-border: 2px solid $border-colour;
+
+@mixin button-primary() {
+  border: $_cta-border
+}
+
+@mixin cta-primary() {
+  text-align: center;
+  text-decoration: none;
+  //font-size: 30px;
+  //color: $font-colour;
+  //display: inline-block;
+  //border: $_cta-border;
+  //padding: 0.5rem;
+  //width: 100%;
+  //max-width: 17rem;
+  //margin-bottom: 1rem;
+
+  &:hover {
+    color: $background-colour;
+    background: $font-colour;
+    border-color: $font-colour;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  @media screen and (max-width: $break-small) {
+    //font-size: 24px;
+    //max-width: 80%;
+  }
+}
+
+@mixin cta-inline {
+  color: $link-bright;
+  text-decoration: none;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

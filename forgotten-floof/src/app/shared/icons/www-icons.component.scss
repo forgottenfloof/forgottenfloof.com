@@ -1,0 +1,25 @@
+@import "../../../styles/base/base";
+@import "../../../styles/elements/elements";
+
+@mixin symbolFill() {
+  circle {
+    stroke: $font-colour;
+    fill: none;
+  }
+  path {
+    stroke: none;
+    fill: $font-colour;
+  }
+}
+
+#email-with-circle .symbol-group {
+  @include symbolFill();
+}
+
+#linkedin-with-circle .symbol-group {
+  @include symbolFill();
+}
+
+#twitter-with-circle .symbol-group {
+  @include symbolFill();
+}
