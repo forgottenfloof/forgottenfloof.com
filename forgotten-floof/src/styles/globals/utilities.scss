@@ -1,0 +1,42 @@
+// Utility classes
+@import "../base/base";
+
+.center {
+  @include center-horizontal();
+}
+
+.marg-b-small {
+  margin-bottom: $spacing-small !important;
+}
+
+.marg-b-med {
+  margin-bottom: $spacing-medium !important;
+}
+
+.marg-b-large {
+  margin-bottom: $spacing-large !important;
+}
+
+.no-marg {
+  margin: 0 !important;
+}
+
+.padame {
+  padding-top: $spacing-large;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide-small {
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.hide-mid {
+  @media screen and (min-width: $break-small) {
+    display: none;
+  }
+}

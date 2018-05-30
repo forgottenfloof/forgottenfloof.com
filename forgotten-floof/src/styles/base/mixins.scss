@@ -1,0 +1,68 @@
+@import "variables";
+
+// Text shadow utilities
+@mixin text-shadow {
+  text-shadow: $text-shadow-base;
+}
+
+@mixin text-shadow-extra-dark {
+  text-shadow: $text-shadow-dark;
+}
+
+@mixin translate($values) {
+  transform: translate($values);
+}
+
+@mixin center-horizontal() {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin center-vertical() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + '.eot'),
+    url($font-file + '.eot?#iefix') format('embedded-opentype'),
+    url($font-file + '.woff') format('woff'),
+    url($font-file + '.ttf') format('truetype'),
+    url($font-file + '.svg#aller') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin centerByMarginLR() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin before() {
+  &:before {
+    content: ' ';
+    position: absolute;
+    @content;
+  }
+}
+
+@mixin after() {
+  &:after {
+    content: ' ';
+    position: absolute;
+    @content;
+  }
+}
+
+@mixin clear-fix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
