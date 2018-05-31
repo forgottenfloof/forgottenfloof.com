@@ -7,11 +7,13 @@ import { IconsComponent } from './icons/www-icons.component';
 import { CookieMessageComponent } from './cookie-message/cookie-message.component';
 import { RouterModule } from '@angular/router';
 import { KebabCasePipe } from './pipes/kebab-case.pipe';
+import { ResponsiveVideoComponent } from './responsive-video/responsive-video.component';
 
 const SHARED_COMPONENTS = [
   ShareLinksComponent,
   IconsComponent,
-  CookieMessageComponent
+  CookieMessageComponent,
+  ResponsiveVideoComponent
 ];
 
 const SHARED_PIPES = [
