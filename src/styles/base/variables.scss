@@ -1,0 +1,42 @@
+@import "colours";
+
+// Base variables
+
+// Base spacing is 10px
+$spacing-tiny: 0.5rem; // 12px/10px
+$spacing-small: 1rem;
+$spacing-news: 1.5rem;
+$spacing-base: 2rem;
+$spacing-medium: 3.5rem;
+$spacing-large: 5.5rem;
+$spacing-x-large: 10rem;
+//$spacing-xx-large: $spacing-x-large * 1.6; // 64px
+//$spacing-xxx-large: $spacing-xx-large * 1.6; // 102px
+
+// Breakpoints
+$break-small: 768px;
+$break-desktop: 1224px;
+$break-large-desktop: 1824px;
+
+$content-max-width: 950px;
+//$content-max-width: 120rem;
+
+// Dimensions
+$nav-bar-height: $spacing-medium;
+$nav-bar-height-mobile: 56px;
+
+// Shadows
+$text-shadow-base: 1px 1px 5px $_shadow-color;
+$text-shadow-dark: 1px 1px 15px $_shadow-color-darker;
+
+$box-shadow-base: 0 0 25px $_shadow-color;
+$box-shadow-lighter: 0 0 12px $_shadow-color-lighter;
+
+//Transitions
+$transition-base:             all 300ms ease-out;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;
+
+// Borders
+$border-base: 2px solid $border-colour;
+$border-thin: 1px solid $border-colour;

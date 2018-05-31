@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47666 37.47666">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9f5ef;
+      }
+    </style>
+  </defs>
+  <title>burger-close</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-1" x="-4.76167" y="15.73833" width="47" height="6" transform="translate(18.73833 -7.76167) rotate(45)"/>
+        <rect class="cls-1" x="-4.76167" y="15.73833" width="47" height="6" transform="translate(-7.76167 18.73833) rotate(-45)"/>
+      </g>
+    </g>
+  </g>
+</svg>

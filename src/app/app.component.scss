@@ -1,0 +1,36 @@
+@import "../styles/base/base";
+@import "../styles/elements/elements";
+
+@mixin link-hack {
+  padding-top: $nav-bar-height;
+  margin-top: - $nav-bar-height;
+
+  @include for-phone-only() {
+    padding-top: $nav-bar-height-mobile;
+    margin-top: - $nav-bar-height-mobile;
+  }
+}
+
+.main {
+  max-width: $content-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $spacing-medium $spacing-small;
+  position: relative;
+}
+
+h2,
+.link-hack {
+  @include link-hack;
+}
+
+img {
+  width: 100%;
+}
+
+.backer-kit {
+  width: 50%;
+}
+.eu-friendly {
+  width: 50%;
+}

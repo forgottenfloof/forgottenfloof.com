@@ -1,0 +1,86 @@
+@import "../../../styles/base/base";
+@import "../../../styles/elements/elements";
+
+$_cookie-max-width: calc(1468px - #{$spacing-base * 2});
+
+.cookie-bar {
+  background: $font-colour;
+}
+
+.text-holder {
+  position: relative;
+  max-width: $_cookie-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 0.9rem;
+  padding: $spacing-tiny $spacing-small;
+
+  @include for-desktop-up() {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  h3 {
+    width: 100%;
+
+    @include for-desktop-up() {
+      width: 13.75rem;
+    }
+  }
+
+  .text-and-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-small;
+
+    @include for-tablet-portrait-up() {
+      margin-bottom: $spacing-base;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    @include cta-inline();
+    color: $bright-link;
+  }
+
+  a,
+  .close {
+    cursor: pointer;
+    width: $spacing-medium;
+    font-size: $spacing-small;
+  }
+
+  .close {
+    cursor: pointer;
+    color: black;
+    padding: $spacing-tiny;
+    width: $spacing-medium;
+    font-size: $spacing-small;
+    background: white;
+    border-color: white;
+    font-weight: 400;
+    opacity: 1;
+    border-radius: 50px;
+    margin-bottom: 0;
+    margin-left: $spacing-tiny;
+
+    @include for-tablet-portrait-up() {
+      margin-left: $spacing-medium;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  @include for-desktop-up() {
+    padding: $spacing-tiny $spacing-base;
+  }
+
+}

@@ -1,0 +1,18 @@
+<div
+  class="toggle"
+  (click)="toggleActive($event)"
+>
+  <img *ngIf="!active" src="./assets/burger-open.svg">
+  <img *ngIf="active" src="./assets/burger-close.svg">
+</div>
+
+<ul *ngIf="active">
+  <li *ngFor="let menuItem of menuItems">
+    <a
+      [href]="[menuItem.url]"
+      (click)="toggleActive($event)"
+    >
+      {{menuItem.text}}
+    </a>
+  </li>
+</ul>
