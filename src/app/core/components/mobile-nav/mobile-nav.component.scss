@@ -29,7 +29,7 @@ ul {
   height: calc(100vh - 62px);
   background: $background-colour;
   z-index: z(links, $_z-indexes-nav);
-  padding: $spacing-base;
+  padding: 7rem $spacing-base $spacing-base $spacing-base;
   transition: transform 300ms ease-out;
   list-style: none;
   margin: 0;

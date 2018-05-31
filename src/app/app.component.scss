@@ -16,11 +16,16 @@
   margin-left: auto;
   margin-right: auto;
   padding: $spacing-medium $spacing-small;
+  position: relative;
 }
 
 h2,
 .link-hack {
   @include link-hack;
+}
+
+img {
+  width: 100%;
 }
 
 .backer-kit {

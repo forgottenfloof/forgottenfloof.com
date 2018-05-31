@@ -6,11 +6,11 @@
       </a>
     </h1>
     <app-mobile-nav
-      *ngIf="innerWidth && (innerWidth < 600)"
+      *ngIf="innerWidth && (innerWidth < 769)"
     ></app-mobile-nav>
 
     <span
-      *ngIf="innerWidth && (innerWidth > 599)"
+      *ngIf="innerWidth && (innerWidth > 768)"
       class="nav-links"
     >
       <span *ngFor="let menuItem of menuItems">
